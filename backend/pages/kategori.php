@@ -57,7 +57,7 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Thomas Edwar</h6>
+                        <h6 class="mb-0">Fahmi Alhafizh</h6>
                         <span>Admin</span>
                     </div>
                 </div>
@@ -150,10 +150,14 @@
                             <a href="#" class="dropdown-item text-center">See all notifications</a>
                         </div>
                     </div>
+                    <a href="../../index.php" class="nav-link" data-bs-toggle="">
+                    <i class="fas fa-tv"></i>
+                        <span class="d-none d-lg-inline-flex">Web</span>
+                    </a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Thomas Edwar</span>
+                            <span class="d-none d-lg-inline-flex">Fahmi Alhafizh</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
@@ -178,7 +182,44 @@
 					</li>
 				</ol>
 			</nav>
-    
+            <?php 
+            require_once '../../database/dbkoneksi.php';
+            ?>
+            <?php 
+            $sql = "SELECT * FROM tipe_motor";
+            $rs = $dbh->query($sql);
+            ?>
+            <br>
+            <a class="btn btn-primary" href="../pages/form/form_kategori.php" role="button">Add Category <i class="fa fa-cart-plus" aria-hidden="true"></i></a><br><br>
+            <table class="table table-hover table-striped" width="100%" border="1" cellspacing="2" cellpadding="2">
+                <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Type Motor</th>
+                            <th>Aksi</th>
+                        </tr>
+                </thead>
+                <tbody>
+                    <?php 
+                    $nomor  =1 ;
+                    foreach($rs as $row){
+                    ?>
+                            <tr >
+                                <td><?=$row['id']?></td>
+                                <td><?=$row['tipe_motor']?></td>
+                                <td>
+                                <button type="button" class="btn btn-square btn-outline-success m-2"><a href="#?id=<?= $row['id'] ?>"><i class="fa fa-eye" aria-hidden="true"></i></a></button>
+                                <button type="button" class="btn btn-square btn-outline-secondary m-2"><a href="#?idedit=<?= $row['id'] ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></button>
+                                <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete_kategori.php"
+                                onclick="if(!confirm('Anda Yakin Hapus Tipe Motor <?=$row['tipe_motor']?>?')) {return false}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
+                                </td>
+                             </tr>
+                        <?php 
+                        $nomor++;   
+                        } 
+                        ?>
+                </tbody>
+            </table>
             </div>
             <!-- End Content -->
 
@@ -188,7 +229,7 @@
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">MOTOBRADS</a>, All Right Reserved. 
+                            &copy; <a href="../../index.php">MOTOBRADS</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                         <p class="m-0 small">Copyright &copy; Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-mug-hot"></i> by <a href="https://www.linkedin.com/in/fahmi-muhammad-al-hafizh-297097259/" style="text-decoration: none;">FamSi</a></p>

@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Apr 03, 2023 at 03:48 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Host: 127.0.0.1
+-- Generation Time: May 12, 2023 at 06:01 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `merk` (
   `id` int(11) NOT NULL,
   `nama_merk` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `merk`
@@ -39,8 +39,9 @@ CREATE TABLE `merk` (
 INSERT INTO `merk` (`id`, `nama_merk`) VALUES
 (1, 'Honda'),
 (2, 'Yamaha'),
-(3, 'TVS'),
-(4, 'Suzuki');
+(3, 'Ducati'),
+(4, 'Suzuki'),
+(5, 'Kawasaki');
 
 -- --------------------------------------------------------
 
@@ -56,15 +57,18 @@ CREATE TABLE `motor` (
   `harga` int(45) NOT NULL,
   `merk_id` int(45) NOT NULL,
   `stok` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `motor`
 --
 
 INSERT INTO `motor` (`id`, `nama_motor`, `cc`, `tipe_motor_id`, `harga`, `merk_id`, `stok`) VALUES
-(2, 'Honda Supra Fit 2004', 100, 2, 5000000, 1, 0),
-(4, 'Yamaha F1Z 110', 110, 3, 2500000, 2, 12);
+(1, 'HONDA CBR1000 FIREBLADE', 998, 3, 1000000000, 1, 2),
+(2, 'SUZUKI GSX-S 1000GT', 1099, 3, 900000000, 4, 3),
+(3, 'YAMAHA XMAX 255', 250, 1, 70000000, 2, 13),
+(4, 'DUCATI PANIGALE V4 Full Carbon', 1009, 3, 700000000, 3, 2),
+(5, 'KAWASAKI W175', 177, 3, 35000000, 5, 5);
 
 -- --------------------------------------------------------
 
@@ -78,7 +82,15 @@ CREATE TABLE `pesanan` (
   `alamat_pelanggan` text NOT NULL,
   `motor_id` int(45) NOT NULL,
   `quantity` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pesanan`
+--
+
+INSERT INTO `pesanan` (`id`, `nama_pelanggan`, `alamat_pelanggan`, `motor_id`, `quantity`) VALUES
+(1, 'Joko Susanto Budiono', 'Jl.Lembayung III No.99, Cikaret, Cibinong, Kab.Bogor', 1, 1),
+(2, 'Suriyanto KusumoNegoro', 'Perum Citra Grand, Cluster Ebony, Cibulao, Kota Malang', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -89,7 +101,7 @@ CREATE TABLE `pesanan` (
 CREATE TABLE `tipe_motor` (
   `id` int(11) NOT NULL,
   `tipe_motor` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tipe_motor`
@@ -139,19 +151,19 @@ ALTER TABLE `tipe_motor`
 -- AUTO_INCREMENT for table `merk`
 --
 ALTER TABLE `merk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `motor`
 --
 ALTER TABLE `motor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tipe_motor`

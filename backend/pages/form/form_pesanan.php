@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MOTOMIN - Merk</title>
+    <title>MOTOMIN - Form Pesanan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -21,39 +21,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../../assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
 
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../../fontawesome/css/all.min.css">
 </head>
 
 <body>
     <div class="container-fluid position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Sabar...</span>
             </div>
-        </div>
+        </div> -->
         <!-- Spinner End -->
 
 
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="../index.php" class="navbar-brand mx-4 mb-3">
+                <a href="index.php" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa-solid fa-motorcycle"></i> MOTOMIN</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
-                        <img class="rounded-circle" src="../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <img class="rounded-circle" src="../../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
@@ -62,11 +62,8 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="../index.php" class="nav-item nav-link"><i class="fas fa-home"></i> Dashboard</a>
-                    <a href="produk.php" class="nav-item nav-link"><i class="fa-solid fa-shop"></i> Product</a> <!--motor-->
-                    <a href="merk.php" class="nav-item nav-link active"><i class="fas fa-tags"></i> Merk</a> <!--merk-->
-                    <a href="kategori.php" class="nav-item nav-link"><i class="fas fa-shopping-basket"></i> Category</a> <!--tipe_motor-->
-                    <a href="pesanan.php" class="nav-item nav-link"><i class="fas fa-receipt"></i> Order List</a> <!--pesanan-->
+                    <a href="../../index.php" class="nav-item nav-link"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="../pesanan.php" class="nav-item nav-link active"><i class="fas fa-receipt"></i> Order List</a> <!--pesanan-->
                 </div>
             </nav>
         </div>
@@ -77,7 +74,7 @@
         <div class="content">
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-                <a href="../index.php" class="navbar-brand d-flex d-lg-none me-4">
+                <a href="../../index.php" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
@@ -95,7 +92,7 @@
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <img class="rounded-circle" src="../../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">Jhon send you a message</h6>
                                         <small>15 minutes ago</small>
@@ -105,7 +102,7 @@
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <img class="rounded-circle" src="../../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">Jhon send you a message</h6>
                                         <small>15 minutes ago</small>
@@ -115,7 +112,7 @@
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <img class="rounded-circle" src="../../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">Jhon send you a message</h6>
                                         <small>15 minutes ago</small>
@@ -150,13 +147,13 @@
                             <a href="#" class="dropdown-item text-center">See all notifications</a>
                         </div>
                     </div>
-                    <a href="../../index.php" class="nav-link" data-bs-toggle="">
+                    <a href="../../../index.php" class="nav-link" data-bs-toggle="">
                     <i class="fas fa-tv"></i>
                         <span class="d-none d-lg-inline-flex">Web</span>
                     </a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <img class="rounded-circle me-lg-2" src="../../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex">Fahmi Alhafizh</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
@@ -170,66 +167,105 @@
             <!-- Navbar End -->
 
 
-            <!-- Main Content -->
+            <!-- Sale & Revenue Start -->
             <div class="container-fluid pt-4 px-4">
-            <nav>
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item">
-						<a href="../index.php">Admin</a>
-					</li>
-					<li class="breadcrumb-item active">
-						Merk
-					</li>
-				</ol>
-			</nav>
-            <?php 
-            require_once '../../database/dbkoneksi.php';
-            ?>
-            <?php 
-            $sql = "SELECT * FROM merk";
-            $rs = $dbh->query($sql);
-            ?>
-            <br>
-            <a class="btn btn-primary" href="../pages/form/form_merk.php" role="button">Add Merk <i class="fa fa-cart-plus" aria-hidden="true"></i></a><br><br>
-            <table class="table table-hover table-striped" width="100%" border="1" cellspacing="2" cellpadding="2">
-                <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Merk Motor</th>
-                            <th>Aksi</th>
-                        </tr>
-                </thead>
-                <tbody>
-                    <?php 
-                    $nomor  =1 ;
-                    foreach($rs as $row){
-                    ?>
-                            <tr >
-                                <td><?=$row['id']?></td>
-                                <td><?=$row['nama_merk']?></td>
-                                <td>
-                                <button type="button" class="btn btn-square btn-outline-success m-2"><a href="#?id=<?= $row['id'] ?>"><i class="fa fa-eye" aria-hidden="true"></i></a></button>
-                                <button type="button" class="btn btn-square btn-outline-secondary m-2"><a href="#?idedit=<?= $row['id'] ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></button>
-                                <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete.php"
-                                onclick="if(!confirm('Anda Yakin Hapus Merk Motor <?=$row['nama_merk']?>?')) {return false}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
-                                </td>
-                             </tr>
-                        <?php 
-                        $nomor++;   
-                        } 
-                        ?>
-                </tbody>
-            </table>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="../../index.php">Admin</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="../pesanan.php">Order List</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            Form Pesanan
+                        </li>
+                    </ol>
+                </nav>
+                <h3 class="text-secondary"> Form Pesanan </h3>
+
+                <?php 
+                require_once '../../../database/dbkoneksi.php';
+                ?>
+                <form method="POST" action="../pesanan.php">
+                    <div class="form-group row">
+                    <label for="id" class="col-4 col-form-label">ID</label> 
+                        <div class="col-8">
+                            <div class="input-group">
+                                <input id="id" name="id" type="number" class="form-control" value="">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="nama_pelanggan" class="col-4 col-form-label">Nama Pelanggan</label> 
+                        <div class="col-8">
+                            <div class="input-group"> 
+                                <input id="nama_pelanggan" name="nama_pelanggan" type="text" class="form-control" value="">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="alamat_pelanggan" class="col-4 col-form-label">Alamat Pelanggan</label> 
+                        <div class="col-8">
+                            <div class="input-group">
+                                <input id="alamat_pelanggan" name="alamat_pelanggan" value="" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="nama_motor" class="col-4 col-form-label">Produk Motor</label> 
+                        <div class="col-8">
+                                <?php 
+                                    $sqltipe= "SELECT * FROM motor";
+                                    $rstipe = $dbh->query($sqltipe);
+                                ?>
+                            <select id="nama_motor" name="nama_motor" class="form-select">
+                                <?php 
+                                    foreach($rstipe as $rowtipe){
+                                ?>
+                                    <option value="<?=$rowtipe['id']?>"><?=$rowtipe['nama_motor']?></option>
+                                <?php
+                                    }
+                                ?>
+                                <!--
+                                <option value="1">Elektronik</option>
+                                <option value="2">Furniture</option>
+                                <option value="3">Makanan</option>-->
+
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="quantity" class="col-4 col-form-label">Kuantitas</label> 
+                        <div class="col-8">
+                            <div class="input-group">
+                                <input id="quantity" name="quantity" value="" type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                        <div class="offset-4 col-8">
+                            <input type="submit" name="proses" type="submit" 
+                            class="btn btn-outline-primary w-100 " value="<?php if (isset($_GET["idedit"])) {echo "Update";} else{echo "Simpan";} ?>"/>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                        <div class="offset-4 col-8">
+                            <input type="reset" name="" type="reset" 
+                            class="btn btn-outline-danger w-100 " value="<?php echo "Reset"?>"/>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <!-- End Content -->
-
-
+                
+                
+                
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="../../index.php">MOTOBRADS</a>, All Right Reserved. 
+                            &copy; <a href="../../../index.php">MOTOBRADS</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                         <p class="m-0 small">Copyright &copy; Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-mug-hot"></i> by <a href="https://www.linkedin.com/in/fahmi-muhammad-al-hafizh-297097259/" style="text-decoration: none;">FamSi</a></p>
@@ -249,16 +285,16 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/lib/chart/chart.min.js"></script>
-    <script src="../assets/lib/easing/easing.min.js"></script>
-    <script src="../assets/lib/waypoints/waypoints.min.js"></script>
-    <script src="../assets/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../assets/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="../assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="../assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../../assets/lib/chart/chart.min.js"></script>
+    <script src="../../assets/lib/easing/easing.min.js"></script>
+    <script src="../../assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="../../assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../../assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../../assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../../assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../assets/js/main.js"></script>
+    <script src="../../assets/js/main.js"></script>
 </body>
 
 </html>
