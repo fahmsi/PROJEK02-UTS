@@ -1,5 +1,5 @@
 <?php 
-require_once '../../database/dbkoneksi.php';
+require_once '../../../database/dbkoneksi.php';
 ?>
 <?php 
    $_id = $_POST['id'];
@@ -19,10 +19,10 @@ require_once '../../database/dbkoneksi.php';
    
    if($_proses == "Simpan"){
     // data baru
-    $sql = "INSERT INTO pesanan (id,nama_pelanggan,alamat_pelanggan,motor_id,quantity VALUES (?,?,?,?,?,?)";
+    $sql = "INSERT INTO pesanan (id,nama_pelanggan,alamat_pelanggan,motor_id,quantity) VALUES (?,?,?,?,?)";
    }else if($_proses == "Update"){
     $ar_data[]=$_POST['idedit'];// ? 8
-    $sql = "UPDATE pesanan SET id=?,tipe_motor=?,nama_pelanggan=?,alamat_pelanggan=?,motor_id=?,quantity=? WHERE id=?";
+    $sql = "UPDATE pesanan SET id=?,nama_pelanggan=?,alamat_pelanggan=?,motor_id=?,quantity=? WHERE id=?";
    }
    if(isset($sql)){
     $st = $dbh->prepare($sql);

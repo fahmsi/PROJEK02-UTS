@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2023 at 06:01 AM
+-- Generation Time: May 15, 2023 at 09:43 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -41,7 +41,8 @@ INSERT INTO `merk` (`id`, `nama_merk`) VALUES
 (2, 'Yamaha'),
 (3, 'Ducati'),
 (4, 'Suzuki'),
-(5, 'Kawasaki');
+(5, 'Kawasaki'),
+(6, 'BMW');
 
 -- --------------------------------------------------------
 
@@ -64,11 +65,14 @@ CREATE TABLE `motor` (
 --
 
 INSERT INTO `motor` (`id`, `nama_motor`, `cc`, `tipe_motor_id`, `harga`, `merk_id`, `stok`) VALUES
-(1, 'HONDA CBR1000 FIREBLADE', 998, 3, 1000000000, 1, 2),
-(2, 'SUZUKI GSX-S 1000GT', 1099, 3, 900000000, 4, 3),
-(3, 'YAMAHA XMAX 255', 250, 1, 70000000, 2, 13),
-(4, 'DUCATI PANIGALE V4 Full Carbon', 1009, 3, 700000000, 3, 2),
-(5, 'KAWASAKI W175', 177, 3, 35000000, 5, 5);
+(1, 'HONDA CBR1000 FIREBLADE', 998, 2, 1000000000, 1, 2),
+(2, 'YAMAHA XMAX 255', 250, 1, 70000000, 2, 13),
+(3, 'DUCATI MULTISTRADA V4', 400, 2, 300000000, 3, 3),
+(4, 'HONDA ADV 160', 158, 1, 36000000, 1, 12),
+(5, 'SUZUKI GSX-S 1000GT', 1010, 2, 700000000, 4, 3),
+(6, 'KAWASAKI ZXR10 ', 998, 2, 770000000, 5, 4),
+(7, 'BMW C400 GT', 350, 1, 450000000, 6, 5),
+(8, 'BMW M1000 RR', 999, 2, 750000000, 6, 2);
 
 -- --------------------------------------------------------
 
@@ -90,7 +94,10 @@ CREATE TABLE `pesanan` (
 
 INSERT INTO `pesanan` (`id`, `nama_pelanggan`, `alamat_pelanggan`, `motor_id`, `quantity`) VALUES
 (1, 'Joko Susanto Budiono', 'Jl.Lembayung III No.99, Cikaret, Cibinong, Kab.Bogor', 1, 1),
-(2, 'Suriyanto KusumoNegoro', 'Perum Citra Grand, Cluster Ebony, Cibulao, Kota Malang', 2, 1);
+(2, 'SURYONO SUTANTO', 'Jl. Petamburan Selatan No.45, Petamburan, Jakarta Selatan', 5, 1),
+(3, 'Putu Gede Adiwara', 'Jl. sakti budha No30, kuta, Bali', 4, 1),
+(4, 'Fajar Asmara', 'Jl. aceh merdeka No.01, Banda Aceh', 2, 2),
+(5, 'Putri Felicia', 'Citra Lake, cluster eboni, surabaya', 8, 1);
 
 -- --------------------------------------------------------
 
@@ -109,8 +116,8 @@ CREATE TABLE `tipe_motor` (
 
 INSERT INTO `tipe_motor` (`id`, `tipe_motor`) VALUES
 (1, 'Matic'),
-(2, 'Semi-Auto'),
-(3, 'Manual');
+(2, 'Manual'),
+(3, 'semi-auto');
 
 --
 -- Indexes for dumped tables
@@ -157,13 +164,13 @@ ALTER TABLE `merk`
 -- AUTO_INCREMENT for table `motor`
 --
 ALTER TABLE `motor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tipe_motor`

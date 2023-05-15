@@ -48,7 +48,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="index.php" class="navbar-brand mx-4 mb-3">
+                <a href="../../index.php" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa-solid fa-motorcycle"></i> MOTOMIN</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -187,7 +187,7 @@
                 <?php 
                 require_once '../../../database/dbkoneksi.php';
                 ?>
-                <form method="POST" action="../merk.php">
+                <form method="POST" action="../../progress/process/proses_merk.php">
                     <div class="form-group row">
                     <label for="id" class="col-4 col-form-label">ID</label> 
                         <div class="col-8">
@@ -197,10 +197,10 @@
                         </div>
                     </div><br>
                     <div class="form-group row">
-                    <label for="nama_motor" class="col-4 col-form-label">Nama Merk Motor</label> 
+                    <label for="nama_merk" class="col-4 col-form-label">Nama Merk Motor</label> 
                         <div class="col-8">
                             <div class="input-group"> 
-                                <input id="nama_motor" name="nama_motor" type="text" class="form-control" value="">
+                                <input id="nama_merk" name="nama_merk" type="text" class="form-control" value="">
                             </div>
                         </div>
                     </div><br>

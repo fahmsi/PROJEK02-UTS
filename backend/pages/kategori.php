@@ -208,9 +208,9 @@
                                 <td><?=$row['id']?></td>
                                 <td><?=$row['tipe_motor']?></td>
                                 <td>
-                                <button type="button" class="btn btn-square btn-outline-success m-2"><a href="#?id=<?= $row['id'] ?>"><i class="fa fa-eye" aria-hidden="true"></i></a></button>
-                                <button type="button" class="btn btn-square btn-outline-secondary m-2"><a href="#?idedit=<?= $row['id'] ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></button>
-                                <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete_kategori.php"
+                                <button type="button" class="btn btn-square btn-outline-success m-2"><a href="../progress/review/kategori.php?id=<?= $row['id'] ?>"><i class="fa fa-eye" aria-hidden="true"></i></a></button>
+                                <button type="button" class="btn btn-square btn-outline-secondary m-2"><a href="../progress/update/edit_kategori.php ?idedit=<?= $row['id'] ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></button>
+                                <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete_kategori.php?iddel=<?=$row['id']?>"
                                 onclick="if(!confirm('Anda Yakin Hapus Tipe Motor <?=$row['tipe_motor']?>?')) {return false}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
                                 </td>
                              </tr>

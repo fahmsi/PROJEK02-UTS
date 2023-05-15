@@ -208,9 +208,9 @@
                                 <td><?=$row['id']?></td>
                                 <td><?=$row['nama_merk']?></td>
                                 <td>
-                                <button type="button" class="btn btn-square btn-outline-success m-2"><a href="#?id=<?= $row['id'] ?>"><i class="fa fa-eye" aria-hidden="true"></i></a></button>
-                                <button type="button" class="btn btn-square btn-outline-secondary m-2"><a href="#?idedit=<?= $row['id'] ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></button>
-                                <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete.php"
+                                <button type="button" class="btn btn-square btn-outline-success m-2"><a href="../progress/review/merk.php?id=<?= $row['id'] ?>"><i class="fa fa-eye" aria-hidden="true"></i></a></button>
+                                <button type="button" class="btn btn-square btn-outline-secondary m-2"><a href="../progress/update/edit_merk.php?idedit=<?= $row['id'] ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></button>
+                                <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete_merk.php?iddel=<?=$row['id']?>"
                                 onclick="if(!confirm('Anda Yakin Hapus Merk Motor <?=$row['nama_merk']?>?')) {return false}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
                                 </td>
                              </tr>

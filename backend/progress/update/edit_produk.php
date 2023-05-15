@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MOTOMIN - View Product</title>
+    <title>MOTOMIN - Update Product</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,7 +48,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="../../index.php" class="navbar-brand mx-4 mb-3">
+                <a href="index.php" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa-solid fa-motorcycle"></i> MOTOMIN</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -178,38 +178,125 @@
                             <a href="../../pages/produk.php">Product</a>
                         </li>
                         <li class="breadcrumb-item active">
-                            Reveiw Product
+                            Update Product
                         </li>
                     </ol>
                 </nav>
-                <h3 class="text-secondary"> Review Product </h3>
+                <h3 class="text-secondary"> Update Product </h3>
 
                 <?php 
                 require_once '../../../database/dbkoneksi.php';
                 ?>
-                <?php
-                    $_id = $_GET['id'];
-                    // select * from produk where id = $_id;
-                    //$sql = "SELECT a.*,b.nama as jenis FROM produk a
-                    //INNER JOIN jenis_produk b ON a.jenis_produk_id=b.id WHERE a.id=?";
-                    $sql = "SELECT * FROM motor WHERE id=?";
-                    $st = $dbh->prepare($sql);
-                    $st->execute([$_id]);
-                    $row = $st->fetch();
-                    //echo 'NAMA PRODUK ' . $row['nama'];
+                <?php 
+                $id = $_GET['idedit'];
+                $sql = "SELECT * FROM motor WHERE id = ?";
+                $statement = $dbh->prepare($sql);
+                $statement->execute([$id]);
+                $result = $statement->fetch()
                 ?>
+                <form method="POST" action="../../progress/process/proses.php">
+                    <input type="hidden" name="idedit" value="<?= $result['id'] ?>">
+                    <div class="form-group row">
+                    <label for="id" class="col-4 col-form-label">ID</label> 
+                        <div class="col-8">
+                            <div class="input-group">
+                                <input id="id" name="id" type="number" class="form-control" value="">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="nama_motor" class="col-4 col-form-label">Nama Motor</label> 
+                        <div class="col-8">
+                            <div class="input-group"> 
+                                <input id="nama_motor" name="nama_motor" type="text" class="form-control" value="">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="cc" class="col-4 col-form-label">Tenaga Mesin</label> 
+                        <div class="col-8">
+                            <div class="input-group">
+                                <input id="cc" name="cc" value="" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="tipe_motor_id" class="col-4 col-form-label">Type Motor</label> 
+                        <div class="col-8">
+                                <?php 
+                                    $sqltipe= "SELECT * FROM tipe_motor";
+                                    $rstipe = $dbh->query($sqltipe);
+                                ?>
+                            <select id="tipe_motor_id" name="tipe_motor_id" class="form-select">
+                                <?php 
+                                    foreach($rstipe as $rowtipe){
+                                ?>
+                                    <option value="<?=$rowtipe['id']?>"><?=$rowtipe['tipe_motor']?></option>
+                                <?php
+                                    }
+                                ?>
+                                <!--
+                                <option value="1">Elektronik</option>
+                                <option value="2">Furniture</option>
+                                <option value="3">Makanan</option>-->
 
-                <table class="table table-hover table-striped">
-                    <tbody>
-                        <tr>   <td>ID</td><td>:</td><td><?=$row['id']?></td></tr>
-                        <tr>   <td>Nama Motor</td><td>:</td><td><?=$row['nama_motor']?></td></tr>
-                        <tr>   <td>Tenaga Mesin</td><td>:</td><td><?=$row['cc']?></td></tr>
-                        <tr>   <td>Type Motor</td><td>:</td><td><?=$row['tipe_motor_id']?></td></tr>
-                        <tr>   <td>Harga</td><td>:</td><td><?=$row['harga']?></td></tr>
-                        <tr>   <td>Merk</td><td>:</td><td><?=$row['merk_id']?></td></tr>
-                        <tr>   <td>Stok</td><td>:</td><td><?=$row['stok']?></td></tr>
-                    </tbody>
-                </table>
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="harga" class="col-4 col-form-label">Harga</label> 
+                        <div class="col-8">
+                            <div class="input-group"> 
+                                <input id="harga" name="harga" value="" type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="merk_id" class="col-4 col-form-label">Merk</label> 
+                        <div class="col-8">
+                            <div class="input-group">
+                                <?php 
+                                    $sqlmerk= "SELECT * FROM merk";
+                                    $rsmerk = $dbh->query($sqlmerk);
+                                ?>
+                                <select id="merk_id" name="merk_id" class="form-select">
+                                    <?php 
+                                        foreach($rsmerk as $rowmerk){
+                                    ?>
+                                        <option value="<?=$rowmerk['id']?>"><?=$rowmerk['nama_merk']?></option>
+                                    <?php
+                                        }
+                                    ?>
+                                    <!--
+                                    <option value="1">Elektronik</option>
+                                    <option value="2">Furniture</option>
+                                    <option value="3">Makanan</option>-->
+
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <label for="stok" class="col-4 col-form-label">Stok</label> 
+                        <div class="col-8">
+                            <div class="input-group"> 
+                                <input id="stok" name="stok" value="" type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                        <div class="offset-4 col-8">
+                            <input type="submit" name="proses" type="submit" 
+                            class="btn btn-outline-primary w-100 " value="<?php if (isset($_GET["idedit"])) {echo "Update";} else{echo "Simpan";} ?>"/>
+                        </div>
+                    </div><br>
+                    <div class="form-group row">
+                        <div class="offset-4 col-8">
+                            <input type="reset" name="" type="reset" 
+                            class="btn btn-outline-danger w-100 " value="<?php echo "Reset"?>"/>
+                        </div>
+                    </div>
+                </form>
             </div>
                 
                 

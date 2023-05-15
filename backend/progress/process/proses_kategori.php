@@ -1,5 +1,5 @@
 <?php 
-require_once '../../database/dbkoneksi.php';
+require_once '../../../database/dbkoneksi.php';
 ?>
 <?php 
    $_id = $_POST['id'];

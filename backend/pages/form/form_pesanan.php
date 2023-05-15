@@ -48,7 +48,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="index.php" class="navbar-brand mx-4 mb-3">
+                <a href="../../index.php" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa-solid fa-motorcycle"></i> MOTOMIN</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -187,7 +187,7 @@
                 <?php 
                 require_once '../../../database/dbkoneksi.php';
                 ?>
-                <form method="POST" action="../pesanan.php">
+                <form method="POST" action="../../progress/process/proses_pesanan.php">
                     <div class="form-group row">
                     <label for="id" class="col-4 col-form-label">ID</label> 
                         <div class="col-8">
@@ -213,13 +213,13 @@
                         </div>
                     </div><br>
                     <div class="form-group row">
-                    <label for="nama_motor" class="col-4 col-form-label">Produk Motor</label> 
+                    <label for="motor_id" class="col-4 col-form-label">Produk Motor</label> 
                         <div class="col-8">
                                 <?php 
                                     $sqltipe= "SELECT * FROM motor";
                                     $rstipe = $dbh->query($sqltipe);
                                 ?>
-                            <select id="nama_motor" name="nama_motor" class="form-select">
+                            <select id="motor_id" name="motor_id" class="form-select">
                                 <?php 
                                     foreach($rstipe as $rowtipe){
                                 ?>
@@ -227,11 +227,6 @@
                                 <?php
                                     }
                                 ?>
-                                <!--
-                                <option value="1">Elektronik</option>
-                                <option value="2">Furniture</option>
-                                <option value="3">Makanan</option>-->
-
                             </select>
                         </div>
                     </div><br>

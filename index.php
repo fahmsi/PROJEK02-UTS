@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Anyar Bootstrap Template - Index</title>
+  <title>MOTOBRADS MOTOSHOWROOM - HOME</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -48,9 +48,8 @@
               <li><a href="#team">Team</a></li>
             </ul>
           </li>
-          <li>
-          <li><a class="nav-link scrollto" href="produk.php">Product</a></li>
-          <li><a class="nav-link scrollto" href="backend../">Admin</a></li>
+          <li><a class="nav-link scrollto" href="frontend/produk.php">Product</a></li>
+          <li><a class="nav-link scrollto" href="backend/index.php">Admin</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -113,32 +112,32 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Naked Bike</a></h4>
+              <div class="icon"><i class="fas fa-motorcycle"></i></div>
+              <h4 class="title"><a href="#!">Naked Bike</a></h4>
               <p class="description">Calling out every Street riders, these Naked bikes are works of art, performing seamlessly to conquer all challenges with superiority. Set your prideful soul and get the confidence!</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Super Sport Bike</a></h4>
+              <div class="icon"><i class="fas fa-motorcycle"></i></div>
+              <h4 class="title"><a href="#!">Super Sport Bike</a></h4>
               <p class="description">Dominating the most important category of all: rider satisfaction. Taking the next stage of total control, that's exactly what our Super Sport bikes deliver. Now it's time for you to get up and ride off!</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Adventure Bike</a></h4>
+              <div class="icon"><i class="fas fa-motorcycle"></i></div>
+              <h4 class="title"><a href="#!">Adventure Bike</a></h4>
               <p class="description">You will find an Adventure model from our bikes that are proven globally as a travel enduro made for explorers.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4 class="title"><a href="">Cruiser Bike</a></h4>
+              <div class="icon"><i class="fas fa-motorcycle"></i></div>
+              <h4 class="title"><a href="#!">Cruiser Bike</a></h4>
               <p class="description">Cruiser bikes is all about quality and dependability. Cruising in comfort from coast to coast. Feel the wind, lean into every curve and experience the freedom in every mile you ride</p>
             </div>
           </div>
@@ -174,9 +173,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Naked Bike</li>
+              <li data-filter=".filter-app">Sport Bike</li>
               <li data-filter=".filter-card">Adventure Bike</li>
-              <li data-filter=".filter-web">Sport Bike</li>
+              <li data-filter=".filter-web">Super Sport Bike</li>
             </ul>
           </div>
         </div>
@@ -184,32 +183,62 @@
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="frontend/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="frontend/img/cbr.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p></p>
-              <a href="frontend/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="frontend/img/cbr.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="HONDA CBR600R"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="frontend/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <img src="frontend/img/kawasaki.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p></p>
-              <a href="frontend/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="frontend/img/kawasaki.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="KAWASAKI NINJA H2R"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="frontend/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <img src="frontend/img/multistrada.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p><p>
-              <a href="frontend/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="frontend/img/multistrada.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DUCATI MULTISTRADA V4"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="frontend/img/yamaha.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/yamaha.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="YAMAHA R6"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="frontend/img/ducati 2.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/ducati 2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DUCATI PANIGALE S1200"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="frontend/img/bmw.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p><p>
+              <a href="frontend/img/bmw.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="BMW S1300"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -274,7 +303,8 @@
         &copy; Copyright <strong><span>MOTOBRADS</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <p class="m-0 small">Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-mug-hot"></i> 
+        by <a href="https://www.linkedin.com/in/fahmi-muhammad-al-hafizh-297097259/" style="text-decoration: none;">FamSi</a></p>
       </div>
     </div>
   </footer><!-- End Footer -->

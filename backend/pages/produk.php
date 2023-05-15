@@ -218,9 +218,9 @@
                                 <td><?=$row['merk_id']?></td>
                                 <td><?=$row['stok']?></td>
                                 <td>
-                                <button type="button" class="btn btn-square btn-outline-success m-2"><a href="../progress/review/produk.php"?id=<?= $row['id'] ?>><i class="fa fa-eye" aria-hidden="true"></i></a></button>
-                                <button type="button" class="btn btn-square btn-outline-secondary m-2"><a href="#?idedit=<?= $row['id'] ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></button>
-                                <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete.php"
+                                <button type="button" class="btn btn-square btn-outline-success m-2"><a href="../progress/review/produk.php?id=<?=$row['id'] ?>" ><i class="fa fa-eye" aria-hidden="true"></i></a></button>
+                                <button type="button" class="btn btn-square btn-outline-secondary m-2"><a href="../progress/update/edit_produk.php?idedit=<?= $row['id'] ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></button>
+                                <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete.php?iddel=<?=$row['id']?>"
                                 onclick="if(!confirm('Anda Yakin Hapus Data Produk <?=$row['nama_motor']?>?')) {return false}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
                                 </td>
                              </tr>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Anyar Bootstrap Template</title>
+  <title>MOTOBRADS MOTOSHOWROOM - PRODUCT</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -34,12 +34,12 @@
   <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">MOTOBRADS</a></h1>
+      <h1 class="logo"><a href="../index.php">MOTOBRADS</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto active" href="#">product</a></li>
-          <li><a class="nav-link scrollto" href="#">Admin</a></li>
+          <li><a class="nav-link scrollto" href="../index.php">Home</a></li>
+          <li><a class="nav-link scrollto active" href="produk.php">product</a></li>
+          <li><a class="nav-link scrollto" href="../backend/index.php">Admin</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -54,10 +54,10 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Portfolio Details</li>
+          <li><a href="../index.php">Home</a></li>
+          <li>Product</li>
         </ol>
-        <h2>Portfolio Details</h2>
+        <h2>Product Details</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -65,7 +65,15 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
+        <?php 
+        require_once '../database/dbkoneksi.php';
+        ?>
+        <?php 
+        $sql = "SELECT * FROM motor";
+        $rs = $dbh->query($sql);
 
+        foreach ($rs as $row){
+        ?>
         <div class="row gy-4">
 
           <div class="col-lg-8">
@@ -73,15 +81,31 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="img/portfolio/portfolio-1.jpg" alt="">
+                  <img src="img/cbr.jpeg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="img/portfolio/portfolio-2.jpg" alt="">
+                  <img src="img/nmax.jpeg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="img/portfolio/portfolio-3.jpg" alt="">
+                  <img src="img/ducati 2.jpeg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/ducati.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/multistrada.jpeg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/kawasaki.jpeg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/bmw.jpeg" alt="">
                 </div>
 
               </div>
@@ -91,22 +115,19 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3><?= $row ['nama_motor']?></h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: <?= $row ['tipe_motor_id']?></li>
+                <li><strong>Engine</strong>: <?= $row ['cc']?>cc</li>
+                <li><strong>Merk</strong>: <?= $row ['merk_id']?></li>
+                <li><strong>Price</strong>: Rp. <?= $row ['harga']?></li>
               </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <button type="button" class="btn btn-warning m-2"><a href="form.php">BUY NOW !</a></button>
             </div>
           </div>
-
+        <?php
+        }
+        ?>
         </div>
 
       </div>
@@ -118,11 +139,11 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Anyar</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>MOTOBRADS</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+        <p class="m-0 small">Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-mug-hot"></i> 
+        by <a href="https://www.linkedin.com/in/fahmi-muhammad-al-hafizh-297097259/" style="text-decoration: none;">FamSi</a></p>      </div>
     </div>
   </footer><!-- End Footer -->
 
