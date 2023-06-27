@@ -80,6 +80,14 @@
                 <div class="swiper-slide">
                   <img src="img/<?= $row ['gambar']?>" alt="">
                 </div>
+
+                <div class="swiper-slide">
+                  <img src="img/ducati.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/yamaha.jpg" alt="">
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
