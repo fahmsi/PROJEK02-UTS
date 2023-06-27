@@ -75,9 +75,9 @@
           foreach ($rs as $row){
           ?>
           <div class="col-lg-6">
-            <div class="portfolio-details-slider">
+            <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-                <div class="img-responsive">
+                <div class="swiper-slide">
                   <img src="img/<?= $row ['gambar']?>" alt="">
                 </div>
               </div>
