@@ -166,7 +166,7 @@
 
         <div class="section-title">
           <h2>Gallery</h2>
-          <p>Kumpulan bebrapa potret produk MOTOBRADS</p>
+          <p>Kumpulan beberapa potret produk MOTOBRADS</p>
         </div>
 
         <div class="row">
@@ -183,61 +183,151 @@
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="frontend/img/cbr.jpeg" class="img-fluid" alt="">
+            <img src="frontend/img/cbr.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p></p>
-              <a href="frontend/img/cbr.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="HONDA CBR600R"><i class="bx bx-plus"></i></a>
+              <a href="frontend/img/cbr.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="HONDA CBR600R"><i class="bx bx-plus"></i></a>
               <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="frontend/img/kawasaki.jpeg" class="img-fluid" alt="">
+            <img src="frontend/img/kawasaki.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p></p>
-              <a href="frontend/img/kawasaki.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="KAWASAKI NINJA H2R"><i class="bx bx-plus"></i></a>
+              <a href="frontend/img/kawasaki.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="KAWASAKI NINJA H2R"><i class="bx bx-plus"></i></a>
               <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="frontend/img/multistrada.jpeg" class="img-fluid" alt="">
+            <img src="frontend/img/multistrada.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p><p>
-              <a href="frontend/img/multistrada.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DUCATI MULTISTRADA V4"><i class="bx bx-plus"></i></a>
+              <a href="frontend/img/multistrada.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DUCATI MULTISTRADA V4"><i class="bx bx-plus"></i></a>
               <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="frontend/img/yamaha.jpeg" class="img-fluid" alt="">
+            <img src="frontend/img/yamaha.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p></p>
-              <a href="frontend/img/yamaha.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="YAMAHA R6"><i class="bx bx-plus"></i></a>
+              <a href="frontend/img/yamaha.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="YAMAHA R6"><i class="bx bx-plus"></i></a>
               <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="frontend/img/ducati 2.jpeg" class="img-fluid" alt="">
+            <img src="frontend/img/ducati 2.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p></p>
-              <a href="frontend/img/ducati 2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DUCATI PANIGALE S1200"><i class="bx bx-plus"></i></a>
+              <a href="frontend/img/ducati 2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DUCATI PANIGALE S1200"><i class="bx bx-plus"></i></a>
               <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="frontend/img/bmw.jpeg" class="img-fluid" alt="">
+            <img src="frontend/img/bmw.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4></h4>
               <p><p>
-              <a href="frontend/img/bmw.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="BMW S1300"><i class="bx bx-plus"></i></a>
+              <a href="frontend/img/bmw.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="BMW S1300"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="frontend/img/ducatiS.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/ducatiS.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DUCATI"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="frontend/img/aprilia.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/aprilia.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="APRILIA"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="frontend/img/ktm.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/ktm.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="KTM"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="frontend/img/af.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/af.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="HONDA AFRICA"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="frontend/img/bm.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/bm.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="BMW"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="frontend/img/cr.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/cr.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="HONDA CRF"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="frontend/img/cb.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/cb.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="HONDA CB650"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="frontend/img/haya.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/haya.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SUZUKI HAYABUSA"><i class="bx bx-plus"></i></a>
+              <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="frontend/img/duc.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <a href="frontend/img/duc.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DUCATI"><i class="bx bx-plus"></i></a>
               <a href="frontend/produk.php" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>

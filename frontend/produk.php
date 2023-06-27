@@ -65,55 +65,27 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-        <?php 
-        require_once '../database/dbkoneksi.php';
-        ?>
-        <?php 
-        $sql = "SELECT * FROM motor";
-        $rs = $dbh->query($sql);
-
-        foreach ($rs as $row){
-        ?>
         <div class="row gy-4">
+          <?php 
+          require_once '../database/dbkoneksi.php';
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
+          $sql = "SELECT * FROM motor";
+          $rs = $dbh->query($sql);
+
+          foreach ($rs as $row){
+          ?>
+          <div class="col-lg-6">
+            <div class="portfolio-details-slider">
               <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="img/cbr.jpeg" alt="">
+                <div class="img-responsive">
+                  <img src="img/<?= $row ['gambar']?>" alt="">
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="img/nmax.jpeg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="img/ducati 2.jpeg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="img/ducati.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="img/multistrada.jpeg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="img/kawasaki.jpeg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="img/bmw.jpeg" alt="">
-                </div>
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="portfolio-info">
               <h3><?= $row ['nama_motor']?></h3>
               <ul>
@@ -125,9 +97,9 @@
               <button type="button" class="btn btn-warning m-2"><a href="form.php">BUY NOW !</a></button>
             </div>
           </div>
-        <?php
-        }
-        ?>
+          <?php
+          }
+          ?>
         </div>
 
       </div>

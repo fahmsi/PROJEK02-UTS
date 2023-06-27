@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2023 at 09:43 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Jun 27, 2023 at 07:58 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -57,22 +57,23 @@ CREATE TABLE `motor` (
   `tipe_motor_id` int(45) NOT NULL,
   `harga` int(45) NOT NULL,
   `merk_id` int(45) NOT NULL,
-  `stok` int(11) NOT NULL
+  `stok` int(11) NOT NULL,
+  `gambar` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `motor`
 --
 
-INSERT INTO `motor` (`id`, `nama_motor`, `cc`, `tipe_motor_id`, `harga`, `merk_id`, `stok`) VALUES
-(1, 'HONDA CBR1000 FIREBLADE', 998, 2, 1000000000, 1, 2),
-(2, 'YAMAHA XMAX 255', 250, 1, 70000000, 2, 13),
-(3, 'DUCATI MULTISTRADA V4', 400, 2, 300000000, 3, 3),
-(4, 'HONDA ADV 160', 158, 1, 36000000, 1, 12),
-(5, 'SUZUKI GSX-S 1000GT', 1010, 2, 700000000, 4, 3),
-(6, 'KAWASAKI ZXR10 ', 998, 2, 770000000, 5, 4),
-(7, 'BMW C400 GT', 350, 1, 450000000, 6, 5),
-(8, 'BMW M1000 RR', 999, 2, 750000000, 6, 2);
+INSERT INTO `motor` (`id`, `nama_motor`, `cc`, `tipe_motor_id`, `harga`, `merk_id`, `stok`, `gambar`) VALUES
+(1, 'HONDA CBR1000 FIREBLADE', 998, 2, 1000000000, 1, 2, 'cbr.jpg'),
+(2, 'YAMAHA XMAX 255', 250, 1, 70000000, 2, 13, 'nmax.jpg'),
+(3, 'DUCATI MULTISTRADA V4', 400, 2, 300000000, 3, 3, 'multistrada.jpg'),
+(4, 'HONDA ADV 160', 158, 1, 36000000, 1, 12, ''),
+(5, 'SUZUKI GSX-S 1000GT', 1010, 2, 700000000, 4, 3, ''),
+(6, 'KAWASAKI ZXR10 ', 998, 2, 770000000, 5, 4, ''),
+(7, 'BMW C400 GT', 350, 1, 450000000, 6, 5, ''),
+(8, 'BMW M1000 RR', 999, 2, 750000000, 6, 2, '');
 
 -- --------------------------------------------------------
 
@@ -158,25 +159,25 @@ ALTER TABLE `tipe_motor`
 -- AUTO_INCREMENT for table `merk`
 --
 ALTER TABLE `merk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `motor`
 --
 ALTER TABLE `motor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tipe_motor`
 --
 ALTER TABLE `tipe_motor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

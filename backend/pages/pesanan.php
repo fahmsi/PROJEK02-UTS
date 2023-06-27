@@ -193,7 +193,7 @@
             <a class="btn btn-primary" href="../pages/form/form_pesanan.php" role="button">Add Order <i class="fa fa-cart-plus" aria-hidden="true"></i></a><br><br>
             <table class="table table-hover table-striped" width="100%" border="1" cellspacing="2" cellpadding="2">
                 <thead>
-                        <tr>
+                        <tr style="text-align: center;">
                             <th>ID</th>
                             <th>Nama Pemesan</th>
                             <th>Alamat Pemesan</th>
@@ -219,7 +219,7 @@
                                 <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete_pesanan.php?iddel=<?=$row['id']?>"
                                 onclick="if(!confirm('Anda Yakin Hapus Data Pesanan <?=$row['nama_pelanggan']?>?')) {return false}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
                                 </td>
-                             </tr>
+                            </tr>
                         <?php 
                         $nomor++;   
                         } 

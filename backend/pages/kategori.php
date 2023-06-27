@@ -193,7 +193,7 @@
             <a class="btn btn-primary" href="../pages/form/form_kategori.php" role="button">Add Category <i class="fa fa-cart-plus" aria-hidden="true"></i></a><br><br>
             <table class="table table-hover table-striped" width="100%" border="1" cellspacing="2" cellpadding="2">
                 <thead>
-                        <tr>
+                        <tr style="text-align: center;">
                             <th>ID</th>
                             <th>Type Motor</th>
                             <th>Aksi</th>
@@ -204,7 +204,7 @@
                     $nomor  =1 ;
                     foreach($rs as $row){
                     ?>
-                            <tr >
+                            <tr style="text-align: center;">
                                 <td><?=$row['id']?></td>
                                 <td><?=$row['tipe_motor']?></td>
                                 <td>
@@ -213,7 +213,7 @@
                                 <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete_kategori.php?iddel=<?=$row['id']?>"
                                 onclick="if(!confirm('Anda Yakin Hapus Tipe Motor <?=$row['tipe_motor']?>?')) {return false}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
                                 </td>
-                             </tr>
+                            </tr>
                         <?php 
                         $nomor++;   
                         } 

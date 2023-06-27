@@ -189,14 +189,6 @@
                 ?>
                 <form method="POST" action="../../progress/process/proses_merk.php">
                     <div class="form-group row">
-                    <label for="id" class="col-4 col-form-label">ID</label> 
-                        <div class="col-8">
-                            <div class="input-group">
-                                <input id="id" name="id" type="number" class="form-control" value="">
-                            </div>
-                        </div>
-                    </div><br>
-                    <div class="form-group row">
                     <label for="nama_merk" class="col-4 col-form-label">Nama Merk Motor</label> 
                         <div class="col-8">
                             <div class="input-group"> 

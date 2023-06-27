@@ -193,7 +193,7 @@
             <a class="btn btn-primary" href="../pages/form/form_produk.php" role="button">Add Product <i class="fa fa-cart-plus" aria-hidden="true"></i></a><br><br>
             <table class="table table-hover table-striped" width="100%" border="1" cellspacing="2" cellpadding="2">
                 <thead>
-                        <tr>
+                        <tr style="text-align: center;">
                             <th>ID</th>
                             <th>Nama Motor</th>
                             <th>Tenaga Mesin</th>
@@ -209,7 +209,7 @@
                     $nomor  =1 ;
                     foreach($rs as $row){
                     ?>
-                            <tr >
+                            <tr style="text-align: center;">
                                 <td><?=$row['id']?></td>
                                 <td><?=$row['nama_motor']?></td>
                                 <td><?=$row['cc']?></td>
@@ -223,7 +223,7 @@
                                 <button type="button" class="btn btn-square btn-outline-danger m-2"><a href="../../backend/progress/delete/delete.php?iddel=<?=$row['id']?>"
                                 onclick="if(!confirm('Anda Yakin Hapus Data Produk <?=$row['nama_motor']?>?')) {return false}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
                                 </td>
-                             </tr>
+                            </tr>
                         <?php 
                         $nomor++;   
                         } 
